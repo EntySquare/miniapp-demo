@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     // Kraken kraken = Kraken(background: Colors.white, bundlePath: 'assets/page/kraken_test.html');
 
     //version 0.10.0
-    Kraken kraken = Kraken(background: Colors.white, bundle: KrakenBundle.fromUrl('assets://page/kraken_test.html'));
+    Kraken kraken = Kraken(background: Colors.white, bundle: KrakenBundle.fromUrl('assets://assets/page/kraken_test.html'));
 
     return MaterialApp(
       title: 'Flutter Demo',
