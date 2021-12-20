@@ -33,6 +33,7 @@ flutter:
   assets:
     - assets/page/
     - assets/script/
+    - assets/css/kraken_demo.css
 
   uses-material-design: true
 
