@@ -1,15 +1,13 @@
 import 'package:kraken/widget.dart';
 import 'package:flutter/material.dart';
-import 'package:image_gallery_saver/image_gallery_saver.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:kraken/kraken.dart';
+import 'package:miniapp_demo/program/mini_program_search.dart';
 
 import 'kraken_custom_widget.dart';
-// import 'package:kraken_animation_player/kraken_animation_player.dart';
 
 void main() {
   // KrakenAnimationPlayer.initialize();
-  defineKrakenCustomElements();
+  // defineKrakenCustomElements();
   runApp(MyApp());
 }
 
@@ -30,31 +28,19 @@ class MyApp extends StatelessWidget {
 
     //version 0.10.0
     // Kraken kraken = Kraken(background: Colors.white, bundle: KrakenBundle.fromUrl('assets://assets/page/kraken_test.html'));
-    Kraken kraken = Kraken(background: Colors.white, bundle: KrakenBundle.fromUrl('assets://assets/script/test.js'));
+    Kraken kraken = Kraken(background: Colors.black, bundle: KrakenBundle.fromUrl('assets://assets/script/test.js'));
 
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Mini App Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          elevation: 0.0,
-        ),
-        body: kraken,
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.orange,
-          child: Icon(
-            Icons.camera,
-            color: Colors.white,
-          ),
-          onPressed: () {},
-        ),
-      ),
+      initialRoute: '/search',
+      routes: {
+        '/search': (context) => Search(),
+      },
     );
   }
 
