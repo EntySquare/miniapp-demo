@@ -15,7 +15,7 @@ class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0xFF1C1C1E),
       appBar: AppBar(
         backgroundColor: Color(0xFF1C1C1E),
         automaticallyImplyLeading: false,
@@ -57,7 +57,7 @@ class _SearchState extends State<Search> {
                           ),
                           tooltip: 'More',
                           onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => MiniProgramDetail()));
+                            // Navigator.push(context, MaterialPageRoute(builder: (context) => MiniProgramDetail()));
                           }),
                       contentPadding: EdgeInsets.only(top: 0, bottom: 0, left: 30, right: 40),
                       border: OutlineInputBorder(borderRadius: BorderRadius.circular(30), borderSide: BorderSide.none),
@@ -82,16 +82,25 @@ class _SearchState extends State<Search> {
         ),
       ),
       body: Container(
-        color: Colors.black,
+        padding: EdgeInsets.only(top: 10, bottom: 0, left: 25, right: 25),
+        // color: Color(0xFF1C1C1E),
+        child: InkWell(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => MiniProgramDetail()));
+              // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                // return FileView(f.id);
+              // }));
+            },
+            child: Image.asset('assets/image/nike_logo.png', width: 55, height: 55)),
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange,
-        child: Icon(
-          Icons.camera,
-          color: Colors.white,
-        ),
-        onPressed: () {},
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   backgroundColor: Colors.orange,
+      //   child: Icon(
+      //     Icons.camera,
+      //     color: Colors.white,
+      //   ),
+      //   onPressed: () {},
+      // ),
     );
   }
 }
