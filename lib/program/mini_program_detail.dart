@@ -1,5 +1,9 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:kraken/kraken.dart';
+import 'package:kraken/widget.dart';
 
 class MiniProgramDetail extends StatefulWidget {
   const MiniProgramDetail({Key? key}) : super(key: key);
@@ -9,7 +13,7 @@ class MiniProgramDetail extends StatefulWidget {
 }
 
 class _MiniProgramDetailState extends State<MiniProgramDetail> {
-
+  Kraken kraken = Kraken(viewportHeight: (window.physicalSize.height / window.devicePixelRatio) -86, background: Colors.black, bundle: KrakenBundle.fromUrl('assets://assets/script/app.js'));
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,6 +45,12 @@ class _MiniProgramDetailState extends State<MiniProgramDetail> {
               onPressed: () {}),
         ],
       ),
+      body:Scrollbar(
+        child: SingleChildScrollView(
+          child:kraken,
+        ),
+      )
+
     );
   }
 }
