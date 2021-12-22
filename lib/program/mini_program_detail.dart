@@ -42,7 +42,9 @@ class _MiniProgramDetailState extends State<MiniProgramDetail> {
                 color: Colors.white,
               ),
               tooltip: 'More',
-              onPressed: () {}),
+              onPressed: () {
+                Navigator.pop(context);
+              }),
         ],
       ),
       body:Scrollbar(
