@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:miniapp_demo/program/mini_program_detail.dart';
+import 'package:miniapp_demo/animation/page_switching.dart';
 
 class Search extends StatefulWidget {
   const Search({Key? key}) : super(key: key);
@@ -86,21 +87,13 @@ class _SearchState extends State<Search> {
         // color: Color(0xFF1C1C1E),
         child: InkWell(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => MiniProgramDetail()));
+              Navigator.push(context, CustomRouteSlideFromBottomToTop( MiniProgramDetail()));
               // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                 // return FileView(f.id);
               // }));
             },
-            child: Image.asset('assets/image/nike_logo.png', width: 55, height: 55)),
-      ),
-      // floatingActionButton: FloatingActionButton(
-      //   backgroundColor: Colors.orange,
-      //   child: Icon(
-      //     Icons.camera,
-      //     color: Colors.white,
-      //   ),
-      //   onPressed: () {},
-      // ),
+            child: Image.asset('assets/image/nike_logo.png', width: 64, height: 64),
+      )),
     );
   }
 }

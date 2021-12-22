@@ -47,7 +47,7 @@ class _MiniProgramDetailState extends State<MiniProgramDetail> {
               }),
         ],
       ),
-      body:Hero(tag: "kraken", child: kraken)
+      body: kraken
 
     );
   }
