@@ -13,7 +13,7 @@ class MiniProgramDetail extends StatefulWidget {
 }
 
 class _MiniProgramDetailState extends State<MiniProgramDetail> {
-  Kraken kraken = Kraken(viewportHeight: (window.physicalSize.height / window.devicePixelRatio) -86, background: Colors.black, bundle: KrakenBundle.fromUrl('assets://assets/script/app.js'));
+  Kraken kraken = Kraken(viewportHeight: (window.physicalSize.height / window.devicePixelRatio) *0.88, background: Colors.black, bundle: KrakenBundle.fromUrl('assets://assets/script/app.js'));
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,11 +47,7 @@ class _MiniProgramDetailState extends State<MiniProgramDetail> {
               }),
         ],
       ),
-      body:Scrollbar(
-        child: SingleChildScrollView(
-          child:kraken,
-        ),
-      )
+      body:Hero(tag: "kraken", child: kraken)
 
     );
   }
