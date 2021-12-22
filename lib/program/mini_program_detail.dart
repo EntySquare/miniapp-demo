@@ -19,7 +19,7 @@ class _MiniProgramDetailState extends State<MiniProgramDetail> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('耐克',style: TextStyle(color:Colors.white),),
+        // title: Text('耐克',style: TextStyle(color:Colors.white),),
         centerTitle: true,
         backgroundColor: Colors.black,
         actions: [
