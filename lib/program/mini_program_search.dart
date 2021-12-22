@@ -15,7 +15,7 @@ class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0xFF1C1C1E),
       appBar: AppBar(
         backgroundColor: Color(0xFF1C1C1E),
         automaticallyImplyLeading: false,
@@ -82,7 +82,7 @@ class _SearchState extends State<Search> {
         ),
       ),
       body: Container(
-        color: Colors.black,
+        color: Color(0xFF1C1C1E),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.orange,
