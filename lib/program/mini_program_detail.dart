@@ -17,7 +17,8 @@ class _MiniProgramDetailState extends State<MiniProgramDetail> {
       viewportHeight:
           (window.physicalSize.height / window.devicePixelRatio),
       background: Colors.black,
-      bundle: KrakenBundle.fromUrl('assets://assets/script/app.js'));
+      bundle: KrakenBundle.fromUrl('assets://assets/script/test.js'));
+      // bundlePath: 'assets/script/app.js');
 
   @override
   Widget build(BuildContext context) {
