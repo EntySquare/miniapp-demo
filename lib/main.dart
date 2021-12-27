@@ -8,6 +8,7 @@ import 'kraken_custom_widget.dart';
 void main() {
   // KrakenAnimationPlayer.initialize();
   // defineKrakenCustomElements();
+  // KrakenVideoPlayer.initialize();
   runApp(MyApp());
 }
 
@@ -24,11 +25,11 @@ class MyApp extends StatelessWidget {
     // );
 
     //version 0.9.0
-    // Kraken kraken = Kraken(background: Colors.white, bundlePath: 'assets/page/kraken_test.html');
+    // Kraken kraken = Kraken(background: Colors.white, bundlePath: 'assets/script/test.js');
 
     //version 0.10.0
     // Kraken kraken = Kraken(background: Colors.white, bundle: KrakenBundle.fromUrl('assets://assets/page/kraken_test.html'));
-    Kraken kraken = Kraken(background: Colors.black, bundle: KrakenBundle.fromUrl('assets://assets/script/test.js'));
+    // Kraken kraken = Kraken(background: Colors.black, bundle: KrakenBundle.fromUrl('assets://assets/script/test.js'));
 
     return MaterialApp(
       title: 'Mini App Demo',

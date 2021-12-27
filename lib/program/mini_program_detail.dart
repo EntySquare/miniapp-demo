@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
@@ -37,8 +36,8 @@ class _MiniProgramDetailState extends State<MiniProgramDetail> {
         children: [
           kraken,
           Positioned(
-              top: 30,
-              right: 10,
+            top: 30,
+            right: 10,
               child: Container(
                   alignment: Alignment.topLeft,
                   padding: EdgeInsets.only(left: 30),
