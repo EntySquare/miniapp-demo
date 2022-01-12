@@ -17,12 +17,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   xml: 5.0.2
   xml2json: 5.3.2
-#  kraken: 0.9.0
-  kraken: 0.10.0-rc.1
+#  kraken: ^0.9.1-rc.1
+  kraken: 0.10.0
   image_picker: ^0.8.4+1
   image_gallery_saver: ^1.7.1
 #  kraken_video_player: 2.0.0-dev.0
-#  kraken_video_player: 1.0.0
+#  kraken_video_player: ^1.1.0
 #  kraken_websocket: ^1.0.5
 #  kraken_devtools: 0.4.0-dev.1
 #  kraken_animation_player: ^1.0.0
