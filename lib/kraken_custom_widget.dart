@@ -8,7 +8,7 @@ class TextWidgetElement extends WidgetElement {
   TextWidgetElement(EventTargetContext? context) : super(context);
 
   @override
-  Widget build(BuildContext context, Map<String, dynamic> properties) {
+  Widget build(BuildContext context, Map<String, dynamic> properties, List<Widget> children) {
     return GestureDetector(
       onTap: takePhoto,
       child: Container(
@@ -36,7 +36,7 @@ class ImageWidgetElement extends WidgetElement {
   ImageWidgetElement(EventTargetContext? context) : super(context);
 
   @override
-  Widget build(BuildContext context, Map<String, dynamic> properties) {
+  Widget build(BuildContext context, Map<String, dynamic> properties, List<Widget> children) {
     return Container(
       width: 300,
       height: 200,
